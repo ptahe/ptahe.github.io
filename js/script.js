@@ -81,8 +81,7 @@ window.addEventListener('DOMContentLoaded', function () {
 	//Получаем табы (переключатели), родительский элемент табов, и контент табов
 	let tab = document.querySelectorAll(".info-header-tab"),
 		info = document.querySelector(".info"),
-        acordino1 = document.querySelectorAll(".acordino-list-1"),
-        acordino2 = document.querySelectorAll(".acordino-list-2"),
+     
 		tabContect = document.querySelectorAll(".info-tabcontent");
         
 	//Функция которая скрывает контентные табы
@@ -122,8 +121,6 @@ window.addEventListener('DOMContentLoaded', function () {
 					//элементу target(на который кликнули) добавляем активный класс
 					target.classList.add("active");
                     console.log('click!')
-                    acordino1[i].classList.toggle("activee");
-                    acordino2[i].classList.toggle("activee");
 					//Совпадение по нумерации
 					ShowTabContect(i);
 
